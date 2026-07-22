@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — Media</title>
+<meta name="description" content="Media, press, podcasts, and interviews — Noa Israeli, Department of Labor Studies, Tel Aviv University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="professional.html">Professional Activities</a></li>
+        <li><a href="media.html" class="active">Media</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-band">
+  <div class="titleblock compact">
+    <div class="kicker mono">§ Media</div>
+    <h1 class="page-title">Media &amp; Press</h1>
+    <p class="subtitle">Podcasts, interviews, and articles</p>
+  </div>
+</div>
+
+<main>
+
+  <section id="media">
+    <div class="sec-head"><span class="sec-num mono">§1</span><h2>Media &amp; Press</h2></div>
+    <ul class="media-list">
+      <li>
+  <span class="media-type">Radio Interview<br>May&nbsp;2026</span>
+  <span class="media-title">"Emergency Routine" [in Hebrew] — <span class="outlet">glz</span></span>
+  <span class="media-link"><a href="listen.html" target="_blank" rel="noopener">Listen →</a></span>
+</li>
+      <li>
+        <span class="media-type">Article<br>Dec&nbsp;2025</span>
+        <span class="media-title">"The Impact of Parenting a Child with a Disability on Parental Employment: 'A Vacuum the State Chooses Not to Fill'" [in Hebrew] — <span class="outlet">Davar</span></span>
+        <span class="media-link"><a href="https://www.davar1.co.il/646971/" target="_blank" rel="noopener">Read →</a></span>
+      </li>
+      <li>
+        <span class="media-type">Article<br>May&nbsp;2024</span>
+        <span class="media-title">"Why Do Parents of Children with Disabilities Stop Working?" [in Hebrew] — <span class="outlet">mako</span></span>
+        <span class="media-link"><a href="https://www.mako.co.il/finances-news/Article-87addb5943b9f81027.htm" target="_blank" rel="noopener">Read →</a></span>
+      </li>
+      <li>
+        <span class="media-type">Podcast<br>Apr&nbsp;2024</span>
+        <span class="media-title">"Challenges Facing Parents of Children with Disabilities in the Labor Market" <br> [in Hebrew] — <span class="outlet">Notnim Avoda</span></span>
+        <span class="media-link"><a href="https://www.arlozforum.org/podcast/episode/e00500c1/tgrym-l-hvrym-lyldym-m-mvgvlvyvt-vvk-hvvdh" target="_blank" rel="noopener">Listen →</a></span>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University · Working Paper Series, rev. July 2026</div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — CV</title>
+<meta name="description" content="Curriculum Vitae — Noa Israeli, Department of Labor Studies, Tel Aviv University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">Noa Israeli — Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="professional.html">Professional Activities</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-band">
+  <div class="titleblock compact">
+    <div class="kicker mono">§ Curriculum Vitae</div>
+    <h1 class="page-title">CV</h1>
+    <p class="subtitle">Updated automatically whenever cv.pdf is replaced</p>
+    <div class="hero-links">
+      <a href="cv.pdf" target="_blank" rel="noopener" class="cv">Download CV (PDF) ↓</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section id="cv">
+    <div class="sec-head"><span class="sec-num mono">§1</span><h2>Curriculum Vitae</h2></div>
+    <div class="cv-embed">
+      <iframe src="cv.pdf" title="Noa Israeli — CV"></iframe>
+    </div>
+    <div class="cv-fallback">
+      If the PDF doesn't display above (common on mobile), use the
+      <a href="cv.pdf" target="_blank" rel="noopener">direct download link</a> instead.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University · Working Paper Series, rev. July 2026</div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+</script>
+
+</body>
+</html>

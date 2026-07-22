@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — Radio Interview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">Noa Israeli — Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="professional.html">Professional Activities</a></li>
+        <li><a href="media.html" class="active">Media</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="listen-wrap">
+    <div class="table-caption">Radio Interview · May 2026</div>
+    <h1 class="page-title" style="color:var(--teal-deep);">"Emergency Routine" <span style="font-size:1rem; font-style:italic; color:var(--ink-soft);"><br>[in Hebrew]</span></h1>
+<div class="station-badge">Galei Tzahal (glz)</div>
+    <audio controls preload="none">
+      <source src="radio-interview.mp3" type="audio/mpeg">
+      הדפדפן שלך לא תומך בנגן השמע.
+    </audio>
+    <div class="listen-back"><a href="media.html">← Back to Media</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University</div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+</script>
+
+</body>
+</html>

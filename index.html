@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — About</title>
+<meta name="description" content="Noa Israeli — PhD Candidate, Department of Labor Studies, Tel Aviv University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">Noa Israeli — Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="professional.html">Professional Activities</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-band">
+  <div class="titleblock">
+    <h1>Noa Israeli</h1>
+    <p class="subtitle">PhD Candidate, Researcher &amp; Lecturer<br>Department of Labor Studies, Tel Aviv University</p>
+    <div class="hero-links">
+      <a href="cv.html" class="cv">View CV →</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section id="about">
+    <div class="sec-head"><span class="sec-num mono">§1</span><h2>About</h2></div>
+    <div class="about-grid">
+      <div>
+        <p>
+          I am a PhD candidate (Stage&nbsp;II) in the Department of Labor
+          Studies at Tel Aviv University. My research interests include gender
+          inequality, work&#8211;family relations, disability studies, and social
+          policy. My dissertation examines how national family and welfare policies shape employment
+          disadvantages and the gendered division of paid labor within families
+          raising children with disabilities. More broadly, my work explores how individual and family-level 
+          disadvantages interact with institutional and policy contexts in the EU countries. 
+          I use quantitative research methods, including cross-national analyses of large-scale representetive data. 
+        </p>
+        <p>
+          Alongside my doctoral research, I conduct research on a range of projects
+          in my roles as a research fellow and research assistant. 
+          I also lecture in the Department of Labor Studies at Tel Aviv university, 
+          and regularly present my work at national and international conferences.
+        </p>
+        <p>
+          I am a licensed social worker with senior management experience at a 
+          disability&#8209;focused NGO, where I developed and led a national rehabilitation 
+          program for adolescents and young adults with visual impairments and their families.
+        </p>
+        </p>
+      </div>
+      <div>
+        <div class="figure">
+          <img src="noa.png" alt="Noa Israeli">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head"><span class="sec-num mono">§2</span><h2>Contact</h2></div>
+    <p>For questions about my research, teaching, or opportunities to collaborate, feel free to reach out.</p>
+    <table style="margin-top:20px;">
+      <tbody>
+        <tr>
+          <td class="row-title" style="width:140px;">Email</td>
+          <td><a href="mailto:noaisraeli@mail.tau.ac.il">noaisraeli@mail.tau.ac.il</a></td>
+        </tr>
+        <tr>
+          <td class="row-title">ORCID</td>
+          <td><a href="https://orcid.org/0009-0005-3076-5674" target="_blank" rel="noopener">0009-0005-3076-5674</a></td>
+        </tr>
+        <tr>
+          <td class="row-title">Linkedin</td>
+          <td><a href="https://www.linkedin.com/in/noaisraeli149" target="_blank" rel="noopener">www.linkedin.com/in/noaisraeli149</a></td>
+        </tr>
+        <tr>
+          <td class="row-title"></td>
+          <td>Room 404, Naftali Building, Tel Aviv University</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+</script>
+
+</body>
+</html>

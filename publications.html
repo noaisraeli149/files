@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — Publications</title>
+<meta name="description" content="Publications — Noa Israeli, PhD Candidate, Department of Labor Studies, Tel Aviv University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">Noa Israeli — Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="professional.html">Professional Activities</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-band">
+  <div class="titleblock compact">
+    <div class="kicker mono">§ Publications</div>
+    <h1 class="page-title">Publications</h1>
+    <p class="subtitle">Publications and work in progress</p>
+  </div>
+</div>
+
+<main>
+
+  <section id="publications">
+    <div class="sec-head"><span class="sec-num mono">§1</span><h2>Publications</h2></div>
+    <ul class="ref-list">
+      <li>
+        <span class="ref-tag">Journal Article, 2025</span><br>
+        <strong>Israeli, N.</strong>, Gelbgiser, D. &amp; Stier, H. The gendered
+        division of paid labour among families of children with disabilities:
+        A comparative approach. <span class="journal">European Societies</span>, 1&#8211;28.
+        <a href="https://doi.org/10.1162/EUSO.a.83" target="_blank" rel="noopener">doi.org/10.1162/EUSO.a.83 →</a>
+      </li>
+      <li>
+        <span class="ref-tag">Policy Report, 2024 · In Hebrew</span><br>
+        <strong>Israeli, N.</strong> Challenges, Needs and Rights of Parents of
+        Children with Disabilities in the Labor Market. <span class="journal">Arlozorov Forum</span>.
+        <a href="https://www.arlozforum.org/post/10028" target="_blank" rel="noopener">Read →</a>
+      </li>
+      <li>
+        <span class="ref-tag">Under Review</span><br>
+        Levin, A., Stier, H. &amp; <strong>Israeli, N.</strong> Does pension
+        policy affect working beyond retirement age? A cross&#8209;country comparison.
+      </li>
+      <li>
+        <span class="ref-tag">In Preparation</span><br>
+        <strong>Israeli, N.</strong> &amp; Gelbgiser, D. Child disability and
+        mothers' employment: developmental stages and educational stratification.
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+</script>
+
+</body>
+</html>

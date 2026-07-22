@@ -1,0 +1,87 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — Professional Activities</title>
+<meta name="description" content="Teaching and professional service — Noa Israeli, Department of Labor Studies, Tel Aviv University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">Noa Israeli — Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="professional.html" class="active">Professional Activities</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-band">
+  <div class="titleblock compact">
+    <div class="kicker mono">§ Professional Activities</div>
+    <h1 class="page-title">Professional Activities</h1>
+    <p class="subtitle">Teaching, conference presentations, and service</p>
+  </div>
+</div>
+
+<main>
+
+  <section id="teaching">
+    <div class="sec-head"><span class="sec-num mono">§1</span><h2>Teaching</h2></div>
+    <ul class="simple-list">
+      <li><span>Organizational Theories</span><span class="level">Graduate</span></li>
+      <li><span>Organizations and Society</span><span class="level">Undergraduate</span></li>
+      <li><span>Organizational Behavior</span><span class="level">Undergraduate</span></li>
+    </ul>
+  </section>
+
+  <section id="talks">
+    <div class="sec-head"><span class="sec-num mono">§2</span><h2>Selected conference presentations</h2></div>
+    <ul class="simple-list">
+      <li><span>WFRN Conference</span><span class="level">Montreal 2026</span></li>
+      <li><span>NCFR Annual Conference</span><span class="level">Baltimore 2025</span></li>
+      <li><span>ECSR Annual Conference</span><span class="level">Cologne 2025</span></li>
+      <li><span>ISS Annual Conference</span><span class="level">2025 · 2023</span></li>
+    </ul>
+  </section>
+
+<section id="service">
+    <div class="sec-head"><span class="sec-num mono">§3</span><h2>Professional Service</h2></div>
+    <ul class="simple-list">
+      <li><span>Family Research Committee Coordinator, Israeli Sociological Society (ISS)</span><span class="level"></span></li>
+      <li><span>Ad-hoc reviewer — Journal of Family Research; Israeli Sociology</span><span class="level"></span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+</script>
+
+</body>
+</html>
