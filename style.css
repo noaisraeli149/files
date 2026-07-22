@@ -75,6 +75,9 @@ nav a.active{color:var(--clay); font-weight:700;}
     margin-left:auto;
   }
 }
+main{max-width:820px; margin:0 auto; padding:0 28px;}
+
+
 /* HERO band — used on every page, content varies */
 .hero-band{
   background:var(--teal-deep);
