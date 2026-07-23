@@ -146,7 +146,10 @@ h3.block-title{
 }
 
 .about-grid{display:grid; grid-template-columns:1fr 220px; gap:40px; align-items:start;}
-@media (max-width:640px){.about-grid{grid-template-columns:1fr;}}
+@media (max-width:640px){
+  .about-grid{grid-template-columns:1fr;}
+  .figure{max-width:180px; margin:0 auto;}
+}
 .figure{border:1.5px solid var(--teal); padding:4px; background:var(--paper-shade);}
 .figure img{width:100%; display:block; aspect-ratio:3/4; object-fit:cover;}
 .figure .placeholder{
