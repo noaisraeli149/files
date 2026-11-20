@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noa Israeli — Blog: Suneung and Korean mothers</title>
+<meta name="description" content="[One-sentence description of the post, in English.]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&family=Heebo:wght@400;500;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="blog.css">
+<link rel="canonical" href="https://noa-israeli.com/blog-suneung.html">
+</head>
+<body>
+
+<div class="masthead">Noa Israeli — Department of Labor Studies, Tel Aviv University</div>
+
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="/">N. ISRAELI</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="/">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="professional.html">Professional Activities</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-band">
+  <div class="titleblock compact">
+    <div class="kicker mono">Blog · Nov 2026</div>
+
+    <!-- Title: English and Hebrew (the language switch shows one at a time) -->
+    <h1 class="page-title" data-lang="en" lang="en">A whole country mobilizes for one exam day. But who pays the price over the years?</h1>
+    <h1 class="page-title" data-lang="he" lang="he" dir="rtl" hidden>מדינה שלמה מתגייסת ליום בחינה אחד. אבל מי משלמות את המחיר לאורך שנים?</h1>
+  </div>
+</div>
+
+<main>
+
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-set="en" aria-pressed="true">English</button>
+    <button type="button" data-set="he" aria-pressed="false">עברית</button>
+  </div>
+
+  <!-- ================= ENGLISH VERSION ================= -->
+  <article class="post-body" data-lang="en" lang="en">
+    <p>[Paste the English text here. Each paragraph goes inside its own &lt;p&gt; ... &lt;/p&gt; tags.]</p>
+    <p>[Second paragraph.]</p>
+
+    <!-- Optional: a sub-heading inside the post -->
+    <!-- <h2>Sub-heading</h2> -->
+
+    <!-- Optional: sources -->
+    <!-- <p class="sources">Sources: ... </p> -->
+  </article>
+
+  <!-- ================= HEBREW VERSION ================= -->
+  <article class="post-body" data-lang="he" lang="he" dir="rtl" hidden>
+    <p>[הדביקי כאן את הטקסט בעברית. כל פסקה בתוך תגיות &lt;p&gt; ... &lt;/p&gt; משלה.]</p>
+    <p>[פסקה שנייה.]</p>
+
+    <!-- <h2>כותרת משנה</h2> -->
+    <!-- <p class="sources">מקורות: ... </p> -->
+  </article>
+
+  <p class="post-back"><a href="blog.html">← Back to Blog</a></p>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <div class="colophon">Noa Israeli · Department of Labor Studies · Tel Aviv University </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const list = document.getElementById('navList');
+  toggle.addEventListener('click', () => list.classList.toggle('open'));
+  list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
+
+  // Language switch: everything with data-lang="en" or "he" is shown/hidden together.
+  // A link ending in #he (e.g. blog-suneung.html#he) opens the Hebrew version directly.
+  function setLang(lang){
+    document.querySelectorAll('[data-lang]').forEach(el => { el.hidden = (el.dataset.lang !== lang); });
+    document.querySelectorAll('.lang-switch button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === lang)));
+    document.documentElement.lang = lang;
+    try { history.replaceState(null, '', lang === 'he' ? '#he' : location.pathname); } catch(e) {}
+  }
+  document.querySelectorAll('.lang-switch button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  setLang(location.hash === '#he' ? 'he' : 'en');
+</script>
+
+</body>
+</html>
