@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Noa Israeli",
+  "url": "https://noa-israeli.com/",
+  "image": "https://noa-israeli.com/noa.png",
+  "jobTitle": "PhD Candidate",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Tel Aviv University",
+    "department": { "@type": "Organization", "name": "Department of Labor Studies" }
+  },
+  "knowsAbout": ["Labor Studies", "Gender inequality", "Family and work", "Disability", "Quantitative survey research"],
+    "sameAs": [
+    "https://www.linkedin.com/in/noaisraeli149",
+    "https://orcid.org/0009-0005-3076-5674",
+    "https://scholar.google.com/citations?user=uD9hrBYAAAAJ"
+  ]
+}
+</script>
