@@ -16,18 +16,18 @@
 }
 .post-item h3 a{color:inherit; text-decoration:none;}
 .post-item h3 a:hover{color:var(--clay);}
-.post-title-he{
-  font-family:'Heebo', sans-serif; font-weight:500; font-size:1.05rem;
-  color:var(--ink-soft); direction:rtl; text-align:right; margin:0 0 12px;
+.post-excerpt{margin:0 0 12px; font-size:.97rem;}
+.post-more{font-family:'Space Mono', monospace; font-size:.76rem; margin:0;}
+/* Hebrew block inside a post entry */
+.post-lang-he{
+  direction:rtl; text-align:right; margin-top:20px; padding-top:20px;
+  border-top:1px dashed var(--line);
 }
-.post-title-he a{color:inherit; text-decoration:none;}
-.post-title-he a:hover{color:var(--clay);}
-.post-excerpt{margin:0 0 14px; font-size:.97rem;}
-.post-links{
-  display:flex; flex-wrap:wrap; gap:8px 22px;
-  font-family:'Space Mono', monospace; font-size:.76rem;
-}
-.post-links .he-link{font-family:'Heebo', sans-serif; font-size:.9rem;}
+.post-lang-he h3{font-family:'Heebo', sans-serif; font-weight:700; font-size:1.25rem; line-height:1.35; margin:0 0 6px; color:var(--teal-deep);}
+.post-lang-he h3 a{color:inherit; text-decoration:none;}
+.post-lang-he h3 a:hover{color:var(--clay);}
+.post-lang-he .post-excerpt{font-family:'Heebo', sans-serif; font-size:.97rem; line-height:1.7;}
+.post-lang-he .post-more{font-family:'Heebo', sans-serif; font-size:.9rem;}
 
 /* ---------- Post page ---------- */
 .lang-switch{
